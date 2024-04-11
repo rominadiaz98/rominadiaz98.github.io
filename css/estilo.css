@@ -1,53 +1,56 @@
-    * {
+* {
         /*
         Importo la tipografía sans serif x defecto, para nunito tengo que traerla en el html con el link
         */
     font-family: 'Nunito', sans-serif;
     margin: 0;
+
+    }
+    /* Aplico clases en header*/
+
+    header {
+
+        height: 13vh;
+        background-color: rgb(133, 167, 124);
+        
     }
 
+    .navegacion {
+        font-size: 20px;/* Tamaño de fuente*/
+        font-weight: 500px; /* Hago la tipografía mas gruesa*/
+        margin-left:40px; /* Para que quede más alejado del marco, lo pongo en el NAV */
+        margin-right: 40px;
+        display: flex; /* Se acomoda todo */
+        justify-content: space-between; /* Distribuye de manera horizontal homogeneamente*/
+        align-items: center; /* Centro el texto*/
+    }
 
-    /* Header */
+    .botones { /* Todos los botones*/
 
+        list-style: none; /* Le saco los puntitos */
+        display: flex; /* Lo pongo aca tambien si o si*/
+        align-items: center; /* Centro el texto*/
+        padding: 2rem;
+        
+    }
 
-    .listado li { /* Afecte a li de la lista */
+    .botones li { /* Cada boton*/
 
-        list-style: none; /* Saco los puntitos, numeros, etc. */
-        display: inline; /* Lo muestro uno al lado del otro.*/
+        align-items: center;
+        margin-left:30px;
+        margin-right: 30px;
+
+    }
+
+    .botonOscuro {
+        padding: 1rem; /* Para que el boton sea "mas grueso"*/
+        width: 120px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
         color: white;
     }
 
-
-    .botonHeader li:hover {
-        cursor: pointer;
-        color: green
-    }
-
-    .botonHeader li { /* Le doy esta caracteristica a los botones del header*/ 
-
-        font-size: 20px; /* Tamaño de fuente*/
-        padding: 1rem; /* Para que el boton sea "mas grueso"*/
-        border-radius: 3px; /* Formas mas circular*/
-        width: 200px; /* Tamaño neto del boton*/
-        align-items: center;
-
-    }
-
-    .inicio {
-        display: flex; /* Se adapta, creo*/
-        align-items: center;  
-        background-color: rgb(133, 167, 124);
-        padding: 20px;
-
-    }
-
-
-    .botonNegro {
-        background-color: rgb(0, 0, 0);
-    }
-
-
-    /* Main */
+     /* Comienzo con el main */
 
     main {
         /*
@@ -55,102 +58,188 @@
         */
         margin-top: 0;
         vertical-align: middle;
-        background-image: url('../imagenes/movie.jpg');
+        background-image: url("../Imagenes/movie.jpg");
         background-size: cover;
         background-position: center;
         height: 90vh;
-
+        display: flex; /* Se acomoda */
+        flex-direction: column; /* Lo aplilo en forma de columna */
+        /*Centro el texto */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .tituloPrincipal {
 
-        padding-top: 250px;
-        vertical-align: middle;
+        padding-top: 250px; /* Espacio entre fin de header e inicio de main*/
         color:white;
         font-size: 60px;
-        font-weight: 1000;
-        align-items: center;
-        justify-content: center;
+        font-weight: 1000
+
     }
 
     .tituloSecundario {
-        padding-top: 20px;        
+
+        padding-top: 20px;  /* Espacio entre titulo principal*/
         color:white;
         font-size: 3rem;
         font-weight: 10000;
-        align-items: center;
-        justify-content: center;
         padding-bottom: 40px;
 
     }
 
-    .botonVerde {
+    .botonRegistrate {
+
+
         font-size: 20px; /* Tamaño de fuente*/
+        font-weight: 500px;
         padding: 1rem; /* Para que el boton sea "mas grueso"*/
-        border-radius: 3px; /* Formas mas circular*/
-        width: 200px; /* Tamaño neto del boton*/
-        align-items: center;
+        border-radius: 5px; /* Formas mas circular*/
         color: white;
-        background-color:rgb(133, 167, 124) ;
+        background-color: rgb(133, 167, 124) ;
         cursor: pointer; /* Ver si lo tengo q poner en hover si o si*/
 
     }
 
-    .buscador {
-        border: 2px solid white; 
-        font-size: 1.2rem;
-        height: 50px;
-        padding: 0px 20px;
-        width: 500px;
-    }
+    /* Secciones */
 
-    .buscar {
-        padding-bottom: 40px;
-    }
-
-    /* Secciones*/
-
-    section {
+    .seccionBuscador {
         padding-top: 20px;
-        background-color: rgb(84, 95, 82);
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+        display: flex; /* Se acomoda */
+        flex-direction: column; /* Lo aplilo en forma de columna */
+        /*Centro el texto */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tituloSeccion {
+
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500px;
+        margin-bottom: 1rem; /* Distancia entre titulo y barra de busqueda */
+
+        
+    }
+
+    .buscador {
+
+        border-radius: 25px;
+        border: 2px solid white; /* Le agrego un borde blanco*/
+        font-size: 20px;
+        height: 50px;
+        padding: 0px 20px; /* Distancia arriba a abajo: 0 | Distancia a los costados: 20px */
+        width: 500px; /* Para que sea mas ancho*/
+        
+    }
+
+    .botonBuscar {
+        
+        border: 0.5px solid white;
+        font-size: 20px;
+        padding: 1rem; 
+        font-weight: 500;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color:  rgb(133, 167, 124);
+        color: white;
+        width: 120px;
     }
 
     hr {
 
-        background-color: rgb(84, 95, 82);
-        color: rgb(133, 167, 124);
+        border: 1px solid black;
 
     }
+
+    .seccionTendencias {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+
+    }
+
+    #T {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedorPeliculas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Que al exceder la fila vaya hacia abajo*/
+
+    }
+
+    .pelicula {
+        margin: 2px;
+        padding: 40px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .anteriorSiguiente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .anteriorSiguiente input {
+        margin: 10px;
+    }
+
+    .seccionAclamadas {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+    }
+
 
     /* Footer */
+
     footer {
-        padding: 20px;
-        background-color: rgb(133, 167, 124);
-
+        height: 13vh;
+        background-color:  rgb(133, 167, 124);
     }
 
-    .botonFooter il {
-
-        font-size: 20px; /* Tamaño de fuente*/
-        padding: 1rem; /* Para que el boton sea "mas grueso"*/
-        border-radius: 3px; /* Formas mas circular*/
-        align-items: center;
-
-             
+    .botonFooter {
+        font-size: 20px;/* Tamaño de fuente*/
+        font-weight: 700px;
+        margin-left:30px;
+        margin-right: 30px;
     }
 
-    .botonFooter il:hover {
-        
+    .centrarFooter {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    #oscuro {
+        padding: 0.2rem;
+        width: 200px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+
+    /* Hover */
+
+    .botones li:hover {
         cursor: pointer;
         color: green;
     }
 
+    .botonBuscar:hover {
+        cursor: pointer;
+    }
 
-    .listadoFooter il {
-
-        list-style: none; /* Saco los puntitos, numeros, etc. */
-        display: inline; /* Lo muestro uno al lado del otro.*/
-        align-items: center; /* Centrado */
-        color: white;
-        justify-content: center; /* Dejo centrados los botones*/
+    .botonFooter:hover {
+        cursor: pointer;
     }
