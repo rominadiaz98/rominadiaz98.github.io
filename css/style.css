@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+ /* CSS de todo el header */
+.header {
+    min-height: 14vh;
+    background-color: rgb(107, 141, 107);
+    padding: 0.5rem;
+    width: 100%; /* Evito el desborde*/
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navegacion {
+
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between; /*  Para que quede separado del logo de los botones*/
+    align-items: center; /* Para que no estén centrados*/
+}
+
+.listado {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.item:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#itemNegro {
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* Main */
+
+.main {
+    margin-top: 0;
+    vertical-align: middle;
+    background-image: url('../imagenes/movie.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex; /* Se acomoda */
+    flex-direction: column; /* Lo aplilo en forma de columna */
+    /*Centro el texto */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.tituloPrincipal {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1rem;
+}
+
+.tituloSecundario {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1rem;
+
+}
+
+.botonRegistrarse {
+    background-color: rgb(133, 167, 124);;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 1.5rem; 
+    font-weight: 500;
+    color: white;
+    border: 0.5px solid white;
+}
+
+.botonRegistrarse:hover {
+    cursor: pointer;
+}
+/* Secciones */
+
+    .seccionBuscador {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+        display: flex; /* Se acomoda */
+        flex-direction: column; /* Lo aplilo en forma de columna */
+        /*Centro el texto */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tituloSeccion {
+
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500px;
+        margin-bottom: 1rem; /* Distancia entre titulo y barra de busqueda */
+
+        
+    }
+
+    .buscador {
+
+        border-radius: 25px;
+        border: 2px solid white; /* Le agrego un borde blanco*/
+        font-size: 20px;
+        height: 50px;
+        padding: 0px 20px; /* Distancia arriba a abajo: 0 | Distancia a los costados: 20px */
+        width: 500px; /* Para que sea mas ancho*/
+        
+    }
+
+    .botonBuscar {
+
+        margin-left: 20px;
+        border: 0.5px solid white;
+        font-size: 20px;
+        padding: 1rem; 
+        font-weight: 500;
+        border-radius: 50px;
+        background-color:  rgb(133, 167, 124);
+        color: white;
+        width: 120px;
+    }
+
+    .botonBuscar:hover {
+        cursor: pointer;
+    }
+
+    hr {
+
+        border: 1px solid black;
+
+    }
+
+    .seccionTendencias {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+
+    }
+
+    #T {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedorPeliculas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Que al exceder la fila vaya hacia abajo*/
+
+    }
+
+    .pelicula {
+        margin: 2px;
+        padding: 40px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .anteriorSiguiente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .anteriorSiguiente input {
+        margin: 10px;
+    }
+
+    .seccionAclamadas {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color:  rgb(77, 88, 74);
+    }
+
+        /* Footer */
+    footer {
+        min-height: 14vh;
+        background-color: rgb(107, 141, 107);
+        padding: 0.5rem;
+        width: 100%; /* Evito el desborde*/
+        z-index: 999;
+    }
+
+
+    .navegacionF {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+
+    }
+    .listaFooter {
+        display: flex;
+        align-items: center;
+    }
+
+    #oscuro {
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    /* ---------------------------------------------------------------------------------------------- */
+    /* SECCIONES */
+    
+
+    .registrate {
+        background-image: url('../imagenes/registro.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        padding: 5em 10em;
+
+    }
+    .registro {
+        border-radius: 2em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(185, 201, 167);
+        height: 70vh;
+        width: 70vh;
+    }
+    .formulario {
+        font-size:1.4rem;
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        padding: 0rem;
+    }
+
+    .campo {
+
+        border: 2px;
+        display: flex;
+        margin-left: 1em;
+        border-radius: 0.5em;
+    }
+
+    .cuentaRegistro {
+
+        font-size: 1em;
+        padding: 1em;
+        background-color: rgb(107, 141, 107);
+        border-radius: 5px;
+        color: white;
+
+    }
