@@ -22,6 +22,11 @@
     font-size: 1.5em;
     text-decoration: none;
     color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: translateX(-5px);
 }
 
 .navegacion {
@@ -55,7 +60,12 @@
     border-radius: 5px;
 }
 
+body {
+    background-color: rgb(77, 88, 74);
+}
 /* Main */
+
+
 
 .main {
     margin-top: 0;
@@ -72,6 +82,8 @@
     text-align: center;
     overflow: auto;
 }
+
+
 
 .tituloPrincipal {
     color: white;
@@ -94,10 +106,13 @@
     font-weight: 500;
     color: white;
     border: 0.5px solid white;
+    transition: box-shadow 0.3s, transform 0.2s;
 }
 
 .botonRegistrarse:hover {
     cursor: pointer;
+    box-shadow:4px 4px 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(4px);
 }
 /* Secciones */
 
@@ -145,10 +160,13 @@
         background-color:  rgb(133, 167, 124);
         color: white;
         width: 120px;
+        transition: box-shadow 0.3s, transform 0.2s;
     }
 
     .botonBuscar:hover {
         cursor: pointer;
+        box-shadow:4px 4px 10px rgba(255, 255, 255, 0.5);
+        transform: translateY(4px);
     }
 
     hr {
@@ -273,3 +291,4 @@
         color: white;
 
     }
+
