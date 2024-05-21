@@ -28,27 +28,26 @@
             <h2 class="tituloSecundario" style="color: black;"> Registro</h2>
             <form action method="get">
                 <div class="formulario">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" class="campo">
+                    <input placeholder="Nombre" type="text" id="nombre" class="campo">
+                    <span class="error-text" id="errorNombre"></span> 
                 </div>
                 <div class="formulario">
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" id="apellido" class="campo">
+                    <input placeholder="Apellido" type="text" id="apellido" class="campo">
+                    <span class="error-text" id="errorApellido"></span> 
                 </div>
                 <div class="formulario">
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" class="campo">
+                    <input placeholder="Email" type="email" name="email" id="email" class="campo">
+                    <span class="error-text" id="errorMail"></span> 
                 </div>
                 <div class="formulario">
-                    <label for="contraseña">Contraseña: </label>
-                    <input type="password" name="contraseña" id="contraseña" class="campo">
+                    <input placeholder="Contraseña" type="password" name="contraseña" id="contraseña" class="campo">
+                    <span class="error-text" id="errorContraseña"></span> 
                 </div>
                 <div class="formulario">
-                    <label for="fechaNacimiento"> Fecha de nacimiento: </label>
                     <input type="date" name="" id="fechaNacimiento" class="campo">
+                    <span class="error-text" id="errorFecha"></span> 
                 </div>
                 <div class="formulario">
-                    <label for="pais">Pais: </label>
                     <select id="paises" class="campo">
                         <option value="Argentina" selected>Argentina</option> <!-- Selected para q tenga fijada esa opcion-->
                         <option value="Brasil">Brasil</option> <!-- Ya el aplico la carga de datos-->
@@ -59,11 +58,11 @@
                         <option value="Uruguay">Venezuela</option> 
                         <option value="Uruguay">Colombia</option>      
                     </select>
+                <span class="error-text" id="errorPais"></span> 
                 </div>
-                <div class="formulario">
-                    <input type="checkbox" name="" id="chek">
-                    <label for="chek"> Acepto los términos y condiciones </label>
-                </div>
+                <input type="checkbox" name="" id="chek">
+                <label for="chek"> Acepto los términos y condiciones </label>
+                <span class="error-text" id="errorTerminos"></span> 
                 <div class="formulario">
                 <input type="button" value="Registrarse" class="cuentaRegistro">
                 </div>
@@ -85,6 +84,7 @@
         </ul>
     </nav>
     </footer>
+
     </body>
 
 </html>

@@ -21,26 +21,25 @@
     </header>
     
     <hr>
-    <main>
-        <section class="registrate">
-                <div class="registro">
-                    <h2 class="tituloSecundario" style="color: black;"> Inicia sesión</h2>
-                    <form action="" method="get">
-                    <div class="formulario">   
-                        <label for="email"> Email</label>  
-                        <input type="email" id="email" class="campo">
-                    </div> 
+    <main class="registrate">
+            <div class="registro">
+                <h2 class="tituloSecundario" style="color: black;"> Inicia sesión</h2>
+                <form action="" method="get" id="formulario">
+                <div class="formulario">   
                     <div class="formulario">
-                        <label for="contraseña"> Contraseña</label>
-                        <input type="password" class="campo">         
+                        <input placeholder="  Email" type="email" id="email" class="campo">
+                        <span class="error-text" id="errorMail"></span> 
+                    </div>
+                        
+                    <div class="formulario">
+                        <input placeholder="  Contraseña" type="password" id="password" class="campo">  
+                        <span class="error-text" id="errorPassword"></span>      
                     </div>
                     <div class="formulario">
                         <input type="submit" value="Iniciar sesión" class="cuentaRegistro">
                      </div>
                  </div>
                 </form>
-        </section>
-
     </main>
 
     <footer>    
@@ -54,6 +53,7 @@
         </ul>
     </nav>
     </footer>
+    <script src="./js/validarInicioSesion.js"></script>
 </body>
 
 </html>
