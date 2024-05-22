@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio sesión | CAC-MOVIES</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <title>API RICK AND MORTY</title>
 </head>
 <body>
-
     <header class="header">
         <nav class="navegacion">
             <a href="index.html" class="logo">CAC Movies</a>
@@ -20,29 +19,10 @@
             </ul>
         </nav>
     </header>
-    
-    <hr>
-    <main class="registrate">
-            <div class="registro">
-                <h2 class="tituloSecundario" style="color: black;"> Inicia sesión</h2>
-                <form action="" method="get" id="formulario">
-                <div class="formulario">   
-                    <div class="formulario">
-                        <input placeholder="  Email" type="email" id="email" class="campo">
-                        <span class="error-text" id="errorMail"></span> 
-                    </div>
-                        
-                    <div class="formulario">
-                        <input placeholder="  Contraseña" type="password" id="password" class="campo">  
-                        <span class="error-text" id="errorPassword"></span>      
-                    </div>
-                    <div class="formulario">
-                        <input type="submit" value="Iniciar sesión" class="cuentaRegistro">
-                     </div>
-                 </div>
-                </form>
-    </main>
 
+    <h3 class="seccionAPI"> Personajes de Rick and Morty </h3>
+    <div id="personajes" class="contenedorAPI"></div>
+   
     <footer>    
 
         <nav class="navegacionF">
@@ -54,7 +34,6 @@
         </ul>
     </nav>
     </footer>
-    <script src="./js/validarInicioSesion.js"></script>
+    <script src="./js/api.js"></script>
 </body>
-
 </html>
